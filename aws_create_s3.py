@@ -1,5 +1,5 @@
 #!/bin/python3
-#Python Program for creating an S3 bucket
+#Python Program for creating an S3 bucket with the given region & bucket name
 import boto3
 import sys
 
