@@ -7,10 +7,12 @@ import sys
 
 #myregion = 'eu-west-2'
 myregion = sys.argv[1]
+
 s3_client = boto3.client('s3',
 	region_name=myregion)
 
-bucket_name = 'jyothypython123bucket'
+#bucket_name = 'jyothypython123bucket'
+bucket_name = sys.argv[2]
 location= {'LocationConstraint': myregion}
 
 #Function for create bucket
